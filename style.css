@@ -1,4 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F0F4F8;
+}
+
+html,body{
+    height: 100%;
+    background: #1f2933;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+.aside{
+    padding: 1em;
+}
+
+.card{
+    background: #323f4b;
+    border-radius: 0.5em;
+    box-shadow: rgba(5, 5, 8, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card .c-head{
+    padding: 0.5em;
+    font-size: 42px;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 2px solid #1f2933;
+}
+
+.card .c-body{
+    padding: 1em;
+}
+
+.i-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75em;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.i-group input{
+    width: 60%;
+    background: #1f2933;
+    border: 2px solid #1f2933;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.i-group input:hover{
+    border-color: #aeee98;
+}
+
+.i-group input:focus{
+    outline: none;
+    border-color: #aeee98;
+}
+
+#start{
+    background: #aeee98;
+    color: #1f2933;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#start:hover{
+    filter: brightness(0.9);
+}
+
+.game-area{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell{
+    border: 1px solid #aeee98;
+    transition: all 0.2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cell:hover{
+    background: #323f4b;
 }
